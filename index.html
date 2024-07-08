@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5: JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos de Sintaxis en JavaScript</h1>
+    </header>
+    <main>
+        <section id="control-flujo">
+            <h2>Control de Flujo y Manejo de Errores</h2>
+            <h3>if...else</h3>
+            <pre><code>
+if (true) {
+    console.log("Esto es verdadero");
+} else {
+    console.log("Esto es falso");
+}
+            </code></pre>
+
+            <h3>switch</h3>
+            <pre><code>
+let fruit = "apple";
+switch (fruit) {
+    case "banana":
+        console.log("Banana");
+        break;
+    case "apple":
+        console.log("Apple");
+        break;
+    default:
+        console.log("Other fruit");
+}
+            </code></pre>
+
+            <h3>try/catch/throw</h3>
+            <pre><code>
+try {
+    throw new Error("Algo salió mal");
+} catch (error) {
+    console.error(error.message);
+}
+            </code></pre>
+        </section>
+
+        <section id="bucles">
+            <h2>Bucles e Iteración</h2>
+            <h3>for</h3>
+            <pre><code>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+            </code></pre>
+
+            <h3>while</h3>
+            <pre><code>
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+            </code></pre>
+
+            <h3>do...while</h3>
+            <pre><code>
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j < 5);
+            </code></pre>
+        </section>
+
+        <section id="funciones">
+            <h2>Funciones</h2>
+            <h3>Definir y Llamar Funciones</h3>
+            <pre><code>
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+console.log(greet("World"));
+            </code></pre>
+        </section>
+
+        <section id="operadores">
+            <h2>Expresiones y Operadores</h2>
+            <h3>Asignación y Comparación</h3>
+            <pre><code>
+let x = 5;
+let y = 10;
+console.log(x == y); // false
+console.log(x != y); // true
+            </code></pre>
+
+            <h3>Operadores Aritméticos</h3>
+            <pre><code>
+let sum = x + y;
+let diff = x - y;
+console.log(sum); // 15
+console.log(diff); // -5
+            </code></pre>
+
+            <h3>Operadores Lógicos</h3>
+            <pre><code>
+console.log(true && false); // false
+console.log(true || false); // true
+console.log(!true); // false
+            </code></pre>
+        </section>
+
+        <section id="numeros-fechas">
+            <h2>Números y Fechas</h2>
+            <h3>Objeto Number</h3>
+            <pre><code>
+let num = Number("123");
+console.log(num); // 123
+            </code></pre>
+
+            <h3>Objeto Math</h3>
+            <pre><code>
+console.log(Math.PI); // 3.141592653589793
+console.log(Math.sqrt(16)); // 4
+            </code></pre>
+
+            <h3>Objeto Date</h3>
+            <pre><code>
+let now = new Date();
+console.log(now.toString());
+            </code></pre>
+        </section>
+
+        <section id="texto">
+            <h2>Formateo de Texto</h2>
+            <h3>Objeto String</h3>
+            <pre><code>
+let str = "Hola, Mundo";
+console.log(str.toUpperCase()); // HOLA, MUNDO
+console.log(str.toLowerCase()); // hola, mundo
+            </code></pre>
+        </section>
+
+        <section id="colecciones">
+            <h2>Colecciones Indexadas</h2>
+            <h3>Arreglos</h3>
+            <pre><code>
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.length); // 5
+console.log(arr[0]); // 1
+            </code></pre>
+        </section>
+
+        <section id="dom">
+            <h2>DOM</h2>
+            <h3>Encontrar elementos HTML</h3>
+            <pre><code>
+// Por ID
+let element = document.getElementById("myId");
+console.log(element);
+
+// Por nombre de etiqueta
+let elements = document.getElementsByTagName("p");
+console.log(elements);
+
+// Por nombre de clase
+elements = document.getElementsByClassName("myClass");
+console.log(elements);
+
+// Por selectores CSS
+element = document.querySelector(".myClass");
+console.log(element);
+
+// Por colecciones de objetos HTML
+elements = document.querySelectorAll(".myClass");
+console.log(elements);
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: [Tu Nombre]</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
